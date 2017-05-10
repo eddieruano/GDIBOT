@@ -2,7 +2,7 @@
 * @Author: Eddie Ruano
 * @Date:   2017-05-09 19:18:41
 * @Last Modified by:   Eddie Ruano
-* @Last Modified time: 2017-05-09 19:33:00
+* @Last Modified time: 2017-05-09 20:20:37
 */
 
 var HTTPS = require('https');
@@ -12,7 +12,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy$/;
+      botRegex = "hi:";
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
